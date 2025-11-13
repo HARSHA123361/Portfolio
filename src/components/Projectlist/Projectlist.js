@@ -2,19 +2,34 @@ import React from 'react'
 import '../../pages/style.css';
 import ProjectCard from "./ProjectCard";
 import { Container, Row, Col } from 'react-bootstrap'
-// Removed unused local image imports; all projects use Lottie embeds now
+import { motion } from 'framer-motion';
 
 function Projectlist() {
   return (
-    <div className="projectbackground">
+    <div className="projectbackground" style={{ paddingBottom: '80px' }}>
       <Container fluid className="project-section">
         <Container>
-          <Row style={{ justifyContent: "center" }}>
-            <h3 className='skillshead' style={{ fontFamily: "aveneir next" }}>Projects</h3>
-          </Row>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <Row style={{ justifyContent: "center", marginBottom: '3rem' }}>
+              <Col xs={12} className="text-center">
+                <h2 className='modern-section-title'>My Work</h2>
+                <p className='modern-section-subtitle'>
+                  Explore some of my recent projects showcasing expertise in full-stack development,
+                  machine learning, and user-centric solutions.
+                </p>
+              </Col>
+            </Row>
+          </motion.div>
+
           <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
             <Col xs={12} md={6} lg={4} className="project-card">
               <ProjectCard
+                number="01"
                 imgPath="https://lottie.host/embed/9c05c2fd-da88-48a1-946d-cc828356f46b/QpQ05SKqz2.lottie"
                 isBlog={false}
                 paper={false}
@@ -27,6 +42,7 @@ function Projectlist() {
 
             <Col xs={12} md={6} lg={4} className="project-card">
               <ProjectCard
+                number="02"
                 imgPath="https://lottie.host/embed/aeb00e91-84ad-423f-af4b-b99947619dee/QFKBjdXShb.lottie"
                 isBlog={false}
                 paper={false}
@@ -39,6 +55,7 @@ function Projectlist() {
 
             <Col xs={12} md={6} lg={4} className="project-card">
               <ProjectCard
+                number="03"
                 imgPath="https://lottie.host/embed/d824d5e9-3339-4b84-b5c7-89ed865a48c9/ZTrMIr6LLO.lottie"
                 isBlog={false}
                 paper={false}
@@ -51,6 +68,7 @@ function Projectlist() {
 
             <Col xs={12} md={6} lg={4} className="project-card">
               <ProjectCard
+                number="04"
                 imgPath="https://lottie.host/embed/a81ba3d4-aa2c-49b0-8c33-6826f1d4ff4f/GUVQCbwbs1.lottie"
                 isBlog={false}
                 paper={false}
@@ -63,6 +81,7 @@ function Projectlist() {
 
             <Col xs={12} md={6} lg={4} className="project-card">
               <ProjectCard
+                number="05"
                 imgPath="https://lottie.host/embed/ecee5953-6e20-45d6-8568-184b59968f65/FVywO2zRyr.lottie"
                 isBlog={false}
                 paper={false}
@@ -75,6 +94,7 @@ function Projectlist() {
 
             <Col xs={12} md={6} lg={4} className="project-card">
               <ProjectCard
+                number="06"
                 imgPath="https://lottie.host/embed/27276806-ec1b-46f7-bd58-c3f64e82ef0a/R5Ky6RMw4p.lottie"
                 isBlog={false}
                 paper={false}
@@ -87,6 +107,7 @@ function Projectlist() {
 
             <Col xs={12} md={6} lg={4} className="project-card">
               <ProjectCard
+                number="07"
                 imgPath="https://lottie.host/embed/285dafe4-f1a8-4989-9283-a41b562a48e0/Czb8ePy1ub.lottie"
                 isBlog={false}
                 paper={false}

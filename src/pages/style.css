@@ -18,17 +18,22 @@
 .navbar {
   width: 100%;
   height: 100px;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.95);
   position: fixed !important;
-  transition: all 0.3s ease-out 0s !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
   padding: 0.5rem 3rem !important;
   font-size: 1.3rem !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px) saturate(180%);
+  z-index: 1000;
 }
 
 .sticky {
-  transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
-  backdrop-filter: blur(15px) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  background-color: rgba(255, 255, 255, 0.98) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .navbar-toggler {
@@ -96,16 +101,19 @@
 }
 
 .navbar-nav .nav-link {
-  color: black !important;
+  color: #191919 !important;
   font-size: 16px !important;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   font-weight: 500 !important;
   padding-right: 1rem !important;
   padding-left: 1.5rem !important;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navbar-nav .nav-link:hover {
   color: var(--primary-dark) !important;
+  transform: translateY(-2px);
 }
 
 .resumebtn {
@@ -113,10 +121,25 @@
   border-radius: 25px;
   padding: 0 25px;
   background-color: var(--primary);
-  background-image: linear-gradient(43deg, var(--primary) 0%, var(--primary-dark) 100%);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+  background-image: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
   border: none;
   color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.resumebtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.4);
+}
+
+.logotext h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -0.5px;
 }
 
 @media (max-width: 767px) {
@@ -854,4 +877,337 @@
   .spacingEmail {
     margin-top: 5px;
   }
+}
+
+/* ============================================ */
+/* MODERN REDESIGN STYLES */
+/* ============================================ */
+
+/* Modern Hero Section */
+.headtext-greeting {
+  padding-top: 140px;
+  font-size: 3.5em !important;
+  color: #191919 !important;
+  font-weight: 700 !important;
+  letter-spacing: -1px !important;
+  margin-bottom: 0 !important;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nametext-modern {
+  font-size: 4.5em !important;
+  color: #191919 !important;
+  font-weight: 800 !important;
+  letter-spacing: -2px !important;
+  margin-top: 0.2rem !important;
+  margin-bottom: 1.5rem !important;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.1;
+}
+
+.subtitle-text {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.typewriter-container {
+  min-height: 60px;
+}
+
+.typewriter-container .Typewriter__wrapper {
+  font-size: 2.2em !important;
+  color: var(--primary-dark) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0px !important;
+  font-family: 'Poppins', sans-serif;
+}
+
+.typewriter-container .Typewriter__cursor {
+  font-size: 2.2em !important;
+  color: var(--primary-dark) !important;
+}
+
+.hero-description {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-description p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #666;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  max-width: 600px;
+}
+
+/* Modern Social Links */
+.social-links-modern {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.social-btn-modern {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.social-btn-modern:hover {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  box-shadow: 0 8px 25px rgba(56, 189, 248, 0.3);
+}
+
+.social-btn-modern:hover .social-icon-modern {
+  color: white;
+}
+
+.social-icon-modern {
+  font-size: 28px;
+  color: #191919;
+  transition: color 0.3s ease;
+}
+
+/* Modern CTA Button */
+.cta-button-modern {
+  padding: 16px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(56, 189, 248, 0.3);
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.cta-button-modern:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(56, 189, 248, 0.4);
+}
+
+/* Modern Image Container */
+.imagedeveloper-modern {
+  margin-top: 50px;
+  max-width: 650px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Enhanced Navigation */
+.navbar-nav .nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: var(--primary-dark);
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 60%;
+}
+
+.selected-nav-item::after {
+  width: 60% !important;
+}
+
+/* Modern Section Headings */
+.modern-section-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: #191919;
+}
+
+.modern-section-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+/* Project Card Modern Styles */
+.project-number {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--primary-light);
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.project-card-modern {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  height: 100%;
+  border: none;
+}
+
+.project-card-modern:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.project-tag {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive Modern Styles */
+@media (max-width: 767px) {
+  .headtext-greeting {
+    padding-top: 100px;
+    font-size: 2.2em !important;
+  }
+
+  .nametext-modern {
+    font-size: 2.8em !important;
+  }
+
+  .typewriter-container .Typewriter__wrapper {
+    font-size: 1.5em !important;
+  }
+
+  .typewriter-container .Typewriter__cursor {
+    font-size: 1.5em !important;
+  }
+
+  .hero-description p {
+    font-size: 1rem;
+  }
+
+  .social-btn-modern {
+    width: 50px;
+    height: 50px;
+  }
+
+  .social-icon-modern {
+    font-size: 22px;
+  }
+
+  .cta-button-modern {
+    width: 100%;
+    padding: 14px 30px;
+  }
+
+  .imagedeveloper-modern {
+    margin-top: 30px;
+    max-height: 350px;
+  }
+
+  .modern-section-title {
+    font-size: 2.5rem;
+  }
+
+  .modern-section-subtitle {
+    font-size: 1rem;
+  }
+
+  .project-number {
+    font-size: 3rem;
+  }
+}
+
+/* Smooth Fade In Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Loading Animation */
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.loading-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Improved Card Shadows */
+.card-shadow-modern {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.card-shadow-modern:hover {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+}
+
+/* Better Button Transitions */
+button,
+.btn {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Improved Focus States */
+*:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+button:focus,
+.btn:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
 }
