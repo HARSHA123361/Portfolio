@@ -10,7 +10,7 @@ function Level4Projects() {
             number: "01",
             title: "AI-Powered Ingredient Substitution System",
             description: "Developed a machine learning system for ingredient substitution using NLP embeddings (Word2Vec, BERT), achieving 89% accuracy in predicting replacements. Built data-driven pipelines with Scikit-learn and TensorFlow for model training, integrated Pandas for preprocessing, and optimized performance for real-world recipe datasets.",
-            tags: ["Python", "NLP", "Word2Vec", "BERT", "Scikit-learn", "TensorFlow", "Pandas"],
+            tags: ["Python", "Pandas", "NumPy", "Word2Vec", "BERT", "Sentence-BERT", "Logistic Regression", "Random Forest", "Gradient Boosting", "TensorFlow", "Bidirectional LSTM", "Scikit-learn Pipelines", "GridSearchCV", "K-Fold Cross-Validation", "spaCy Lemmatization", "Tokenization", "TF-IDF", "Cosine Similarity"],
             github: "https://github.com/HARSHA123361/Ingredients-System",
             bossName: "ML Dragon"
         },
@@ -18,7 +18,7 @@ function Level4Projects() {
             number: "02",
             title: "Crypto Dashboard",
             description: "Built a responsive cryptocurrency dashboard with real-time prices, multi-API fallback (CoinGecko, CoinPaprika, CoinLore, Coinranking), caching, and retry mechanisms for reliable uptime and accuracy. Designed a resilient frontend with dark/light theming, CORS proxy rotation, progressive loading indicators, and mobile-optimized UI, deployed seamlessly on Vercel and Firebase Hosting.",
-            tags: ["Next.js", "React", "Tailwind CSS", "Context API", "CoinGecko API", "Firebase", "Vercel"],
+            tags: ["Next.js", "React.js", "Tailwind CSS", "Context API", "React Query", "Axios Interceptors", "LocalStorage Caching", "Retry Logic", "Exponential Backoff", "API Fallback Design", "CoinGecko API", "CoinPaprika API", "CoinLore API", "CoinRanking API", "Jest", "React Testing Library", "Firebase Hosting", "Vercel Deployment", "GitHub Actions CI/CD"],
             github: "https://github.com/HARSHA123361/Crypto_DashBoard",
             bossName: "Crypto Beast"
         },
@@ -26,7 +26,7 @@ function Level4Projects() {
             number: "03",
             title: "Expense Tracker",
             description: "Built a cross-platform expense tracker app with budget management, expense logging, and interactive visualizations, achieving 92% accuracy in spending insights. Designed a responsive UI for higher engagement and optimized performance using Redux for efficient state handling, Node.js/Express APIs, and Firebase sync.",
-            tags: ["React Native", "TypeScript", "Redux", "Node.js", "Express", "MongoDB", "Firebase"],
+            tags: ["React Native", "TypeScript", "Redux Toolkit", "React Navigation", "Node.js", "Express.js", "MongoDB Atlas", "Mongoose", "Decision Tree Model", "Victory Native Charts", "D3.js", "Firebase Realtime Database", "Firestore Sync", "Firebase Authentication", "useMemo", "React.memo"],
             github: "https://github.com/HARSHA123361/ExpenseTracker",
             bossName: "Budget Boss"
         },
@@ -34,7 +34,7 @@ function Level4Projects() {
             number: "04",
             title: "Incident Analysis Web App",
             description: "Developed a web application that extracts incident data from Norman Police Department PDFs/URLs using PyMuPDF, enriches datasets with geocoding and feature engineering, and visualizes insights through clustering maps, bar charts, and pie charts. Built an interactive Streamlit interface with file upload and URL input, integrated K-Means clustering, Plotly visualizations, and automated test coverage with pytest for data validation and geocoding accuracy.",
-            tags: ["Python", "Streamlit", "Pandas", "scikit-learn", "PyMuPDF", "Plotly", "Geopy", "Nominatim API"],
+            tags: ["Python", "Pandas", "NumPy", "PyMuPDF", "Apache Tika", "Regex Parsing", "Feature Engineering", "One-Hot Encoding", "Geopy", "Nominatim API", "K-Means Clustering", "DBSCAN", "Plotly", "Folium Maps", "Seaborn", "Streamlit", "pytest", "Unit Testing", "Integration Testing"],
             github: "https://github.com/HARSHA123361/cis6930fa24-project3",
             bossName: "Data Wizard"
         },
@@ -42,7 +42,7 @@ function Level4Projects() {
             number: "05",
             title: "Virtual Healthcare Assistant",
             description: "Developed a virtual healthcare assistant using NLP models (BERT) to provide instant medical advice and triage support, achieving 92% accuracy in intent classification and symptom mapping. Built custom ML models with TensorFlow to predict potential conditions with 87% precision and implemented a recommendation engine suggesting next steps such as doctor consultations or OTC medication.",
-            tags: ["Python", "NLP", "BERT", "TensorFlow", "Scikit-learn"],
+            tags: ["Python", "Pandas", "NumPy", "BERT", "DistilBERT", "TensorFlow", "Bidirectional LSTM", "Multilayer Perceptron", "Logistic Regression", "Naive Bayes", "Tokenizers", "Attention Masks", "Sequence Padding", "Symptom Embedding", "Flask API", "Docker", "F1 Score", "ROC-AUC"],
             github: "https://github.com/HARSHA123361/Virtual-Health-Assiatant",
             bossName: "Health Titan"
         },
@@ -50,7 +50,7 @@ function Level4Projects() {
             number: "06",
             title: "Online School Management System",
             description: "Developed a full-stack school management system enabling schools to add, edit, delete, and manage student records with a relational MySQL backend. Built dynamic web pages with JSP and JavaScript for responsive interactivity, deployed on Apache Tomcat, ensuring efficient data handling and seamless browser-based access.",
-            tags: ["Java", "JSP", "HTML", "CSS", "JavaScript", "MySQL", "Apache Tomcat"],
+            tags: ["Java", "Servlets", "JSP", "JDBC", "HTML", "CSS", "JavaScript", "JSTL", "MySQL", "Relational Schema Design", "Apache Tomcat", "MVC Architecture", "DAO Pattern", "Session Management", "Form Validation", "Secure Authentication", "WAR Deployment", "JUnit Testing"],
             github: "https://github.com/HARSHA123361/Online_School_Management_System",
             bossName: "School Master"
         },
@@ -58,7 +58,7 @@ function Level4Projects() {
             number: "07",
             title: "Music Recommendation using Facial Expressions",
             description: "Trained a deep learning model with TensorFlow & Keras using OpenCV, mapping emotions to music playlists. Integrated the model into a Flask web app for real-time facial emotion detection and personalized music recommendations, enhancing accuracy by 92%, reducing latency, and boosting user engagement.",
-            tags: ["Python", "OpenCV", "TensorFlow", "Keras", "Flask"],
+            tags: ["Python", "NumPy", "Pandas", "OpenCV", "TensorFlow", "Keras", "CNN", "FER2013 Dataset", "MobileNetV2", "Flask Web Application", "Real-Time Video Processing", "Model Quantization", "Gunicorn", "Nginx"],
             github: "https://github.com/HARSHA123361/Emotion-Detection-using-Facial-Expression",
             bossName: "Emotion King"
         }

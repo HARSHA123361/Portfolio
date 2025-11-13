@@ -39,7 +39,8 @@ function Level3Experience({ addScore }) {
                 "Streamlined sales and inventory reporting pipelines using Python and Cassandra, applying analytical thinking and attention to detail to enhance forecasting accuracy by 40%.",
                 "Optimized microservices deployment and monitoring via Docker, Kubernetes, Grafana, and Prometheus, demonstrating strong problem-solving that ensured consistent low-latency (<200 ms) API responses and faster feature rollouts."
             ],
-            color: '#E67E22'
+            color: '#E67E22',
+            arrowColor: '#fff'
         }
     ];
 
@@ -140,7 +141,7 @@ function Level3Experience({ addScore }) {
                                             <span style={{
                                                 position: 'absolute',
                                                 left: '0',
-                                                color: exp.color,
+                                                color: exp.arrowColor || exp.color,
                                                 fontSize: '1.2rem',
                                                 fontWeight: 'bold'
                                             }}>
