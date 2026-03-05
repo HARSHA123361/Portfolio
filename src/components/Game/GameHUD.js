@@ -134,7 +134,7 @@ function GameHUD({ currentLevel, score, coins }) {
                     </div>
 
                     <motion.a
-                        href="https://drive.google.com/file/d/1tElZlzID9eiOphHPoKprW5D_RgFpOabz/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1qkwpCI4JQU3o5OyPqD-8xaeZ6COLplxh/view?usp=sharing"
                         target="_blank"
                         className="game-button resume-btn"
                         whileHover={{ scale: 1.1 }}
