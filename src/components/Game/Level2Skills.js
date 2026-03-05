@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaCode, FaCogs, FaDatabase, FaChartBar, FaCloud, FaBrain, FaLightbulb, FaUsers } from "react-icons/fa";
+import { FaCode, FaCogs, FaDatabase, FaChartBar, FaCloud, FaBrain } from "react-icons/fa";
 import './GameStyle.css';
 
 function Level2Skills({ addCoin }) {
