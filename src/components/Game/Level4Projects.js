@@ -109,9 +109,10 @@ function Level4Projects() {
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5 }}
                                 style={{
-                                    width: '100%',
+                                    flexGrow: 1,
                                     display: 'flex',
                                     flexDirection: 'column',
+                                    width: '100%',
                                 }}
                             >
                                 {/* Boss Number */}

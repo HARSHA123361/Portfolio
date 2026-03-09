@@ -9,7 +9,7 @@ function Level2Skills({ addCoin }) {
         {
             title: "Programming Languages",
             icon: <FaCode />,
-            skills: ["Java", "Python", "Rust", "C", "C++", ".NET", "C#", "JavaScript", "TypeScript", "Go", "Scala", "Bash", "Swift", "Kotlin", "Objective-C"]
+            skills: ["Java", "Python", "Rust", "C", "C++", ".NET", "C#", "JavaScript", "TypeScript", "Go", "Bash", "Objective-C"]
         },
         {
             title: "Frameworks & Web",
